@@ -7,16 +7,15 @@
     <meta name="keywords" content="Cake, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dua Delights</title>
+    <title>Cake | Template</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
+        
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
-
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -143,67 +142,6 @@
     </section>
     <!-- Hero Section End -->
 
-    <!-- Contact Section Begin -->
-    <section class="contact spad">
-        <div class="container">
-            <div class="contact__address">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="contact__address__item">
-                            <h6>Lahore, Pakistan</h6>
-                            <ul>
-                                <li>
-                                    <span class="icon_pin_alt"></span>
-                                    <p>Mia Mir Colony, Lahore Cantt</p>
-                                </li>
-                                <li><span class="icon_phone"></span>
-                                    <p>+92 329 0641925</p>
-                                </li>
-                                 <li><span class="fa fa-whatsapp"></span>
-                                    <a href="https://wa.me/923290641925" target="_blank"><p>Whatsapp</p></a>
-                                </li>
-                                <li><span class="icon-social-instagram"></span>
-                                    <a href="https://www.instagram.com/dua_delights0?igsh=ZWw3d3Z2NGxmdWtj" target="_blank"><p>Instagram</p></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="contact__text">
-                        <h3>Contact With us</h3>
-                        <ul>
-                            <li>Representatives or Advisors are available:</li>
-                            <li>Mon-Sat: 10:00am to 10:00pm</li>
-                            <li>Sun: 10:00am to 8:00pm</li>
-                        </ul>
-                        <img src="img/cake-piece.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="contact__form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" placeholder="Name">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="text" placeholder="Email">
-                                </div>
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Message"></textarea>
-                                    <button type="submit" class="site-btn">Send Us</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact Section End -->
 
 
 

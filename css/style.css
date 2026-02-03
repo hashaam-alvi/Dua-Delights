@@ -35,6 +35,8 @@ body {
   background-color: #ffe3f1;
 }
 
+
+
 h1,
 h2,
 h3,
@@ -487,6 +489,7 @@ ol {
   text-align: center;
 }
 
+
 .header__menu ul li {
   list-style: none;
   display: inline-block;
@@ -494,12 +497,13 @@ ol {
   margin-right: -5px;
 }
 
-.header__menu ul li.active a {
+/* .header__menu ul li.active a {
   background: #111111;
-}
+} */
 
 .header__menu ul li:hover a {
-  background: #111111;
+  background: #ffffff;
+  border-radius: 40px;
 }
 
 .header__menu ul li:hover .dropdown {
@@ -547,7 +551,6 @@ ol {
 
 .header__menu ul li a {
   font-size: 16px;
-  color: #ffffff;
   display: block;
   font-weight: 600;
   padding: 20px 35px 18px;
@@ -555,6 +558,7 @@ ol {
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
+  color: #8f405b;
 }
 
 .offcanvas-menu-wrapper {
@@ -1138,6 +1142,7 @@ ol {
 .product__item:hover .product__item__pic .product__label span {
   background: #ffe3f1;
   color: #ffffff;
+
 }
 
 .product__item:hover .product__item__text .product__item__price {
@@ -1155,6 +1160,7 @@ ol {
   height: 270px;
   position: relative;
   background-position: center;
+  border-radius: 15px;  
 }
 
 .product__item__pic .product__label {
@@ -1565,7 +1571,7 @@ ol {
   border: none;
   background: transparent;
   display: inline-block;
-  width: 25%;
+  width: 100%;
   height: 44px;
   line-height: 44px;
   padding-left: 30px;
@@ -3600,7 +3606,7 @@ ol {
   }
 
   .shop__option__search form .nice-select {
-    width: 30%;
+    width: 100%;
   }
 
   .shop__option__search form input {
@@ -3773,7 +3779,7 @@ ol {
   }
 
   .shop__option__search form .nice-select {
-    width: 40%;
+    width: 100%;
   }
 
   .shop__option__search form input {
@@ -4196,7 +4202,7 @@ ol {
   }
 
   .shop__option__search form .nice-select {
-    width: 36%;
+    width: 100%;
   }
 
   .shop__option__search form input {
@@ -4526,7 +4532,7 @@ ol {
   }
 
   .shop__option__search form .nice-select {
-    width: 46%;
+    width: 100%;
   }
 
   .shop__option__search form input {

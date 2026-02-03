@@ -37,14 +37,14 @@
     <!-- Offcanvas Menu Begin -->
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
-        
+
         <div class="offcanvas__logo">
             <a href="./index.html" style="display:flex;align-items:center;gap:10px;">
                 <img src="img/logos.png" alt="">
             </a>
         </div>
         <div id="mobile-menu-wrap"></div>
-        
+
     </div>
     <!-- Offcanvas Menu End -->
 
@@ -87,8 +87,8 @@
     </header>
     <!-- Header Section End -->
 
-  
-  <!-- Shop Section Begin -->
+
+    <!-- Shop Section Begin -->
     <section class="shop spad">
         <div class="container">
             <div class="shop__option">
@@ -96,23 +96,24 @@
                     <div class="col-lg-7 col-md-7">
                         <div class="shop__option__search" style="background-color: white;">
                             <form action="#">
-                                <select style="width: 100%;">
-                                    <option value="">Categories</option>
-                                    <option value="">Custom Cakes</option>
-                                    <option value="">Cup Cake</option>
-                                    <option value="">Bisconies</option>
+                                <select id="categoryFilter" style="width: 100%;">
+                                    <option value="all">Categories</option>
+                                    <option value="Custom Cake">Custom Cake</option>
+                                    <option value="Cupcake">Cupcake</option>
+                                    <option value="Brownies">Brownies</option>
                                 </select>
-                                
+
                             </form>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/Aniversary.jpeg" style="border-radius: 15px;">
+                        <div class="product__item__pic set-bg" data-setbg="img/Aniversary.jpeg"
+                            style="border-radius: 15px;">
                             <div class="product__label">
                                 <span>Custom Cake</span>
                             </div>
@@ -130,7 +131,7 @@
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/frozen.jpeg">
                             <div class="product__label">
-                                <span>Custome Cake</span>
+                                <span>Custom Cake</span>
                             </div>
                         </div>
                         <div class="product__item__text">
@@ -140,7 +141,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/Birthday.jpeg" >
+                        <div class="product__item__pic set-bg" data-setbg="img/Birthday.jpeg">
                             <div class="product__label">
                                 <span>Custom Cake</span>
                             </div>
@@ -158,7 +159,7 @@
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/panda.jpeg">
                             <div class="product__label">
-                                <span>Custome Cake</span>
+                                <span>Custom Cake</span>
                             </div>
                         </div>
                         <div class="product__item__text">
@@ -175,63 +176,63 @@
                         </div>
                         <div class="product__item__text">
                             <h6><a href="#">Chocolate Brownies</a></h6>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/children.jpeg">
-                            <div class="product__label">
-                                <span>Custom Cake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Masha Theme Cake</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/Cupcakes.jpeg">
-                            <div class="product__label">
-                                <span>Cupcake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Custom Cupcakes</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/birthday2.jpeg">
-                            <div class="product__label">
-                                <span>Custome Cake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Mississippi Mud</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/Anniversary.jpeg">
-                            <div class="product__label">
-                                <span>Custome Cake</span>
-                            </div>
-                        </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">Anniversary Special</a></h6>
-                    </div>
-                </div>
-               
             </div>
-            
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="product__item">
+                    <div class="product__item__pic set-bg" data-setbg="img/children.jpeg">
+                        <div class="product__label">
+                            <span>Custom Cake</span>
+                        </div>
+                    </div>
+                    <div class="product__item__text">
+                        <h6><a href="#">Masha Theme Cake</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product__item">
+                <div class="product__item__pic set-bg" data-setbg="img/Cupcakes.jpeg">
+                    <div class="product__label">
+                        <span>Cupcake</span>
+                    </div>
+                </div>
+                <div class="product__item__text">
+                    <h6><a href="#">Custom Cupcakes</a></h6>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product__item">
+                <div class="product__item__pic set-bg" data-setbg="img/birthday2.jpeg">
+                    <div class="product__label">
+                        <span>Custom Cake</span>
+                    </div>
+                </div>
+                <div class="product__item__text">
+                    <h6><a href="#">Mississippi Mud</a></h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="product__item">
+                <div class="product__item__pic set-bg" data-setbg="img/Anniversary.jpeg">
+                    <div class="product__label">
+                        <span>Custom Cake</span>
+                    </div>
+                </div>
+                <div class="product__item__text">
+                    <h6><a href="#">Anniversary Special</a></h6>
+                </div>
+            </div>
+
+        </div>
+
         </div>
     </section>
     <!-- Shop Section End -->
@@ -249,6 +250,40 @@
     </div>
     <!-- Search End -->
 
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const select = document.getElementById("categoryFilter");
+    const products = document.querySelectorAll(".product__item");
+
+    // normal change (works if nice-select is removed)
+    select.addEventListener("change", filterProducts);
+
+    // NICE SELECT FIX
+    document.addEventListener("click", function (e) {
+        if (e.target.closest(".nice-select")) {
+            setTimeout(() => filterProducts.call(select), 50);
+        }
+    });
+
+    function filterProducts() {
+        const selectedCategory = select.value;
+
+        products.forEach(product => {
+            const label = product
+                .querySelector(".product__label span")
+                ?.innerText.trim();
+
+            if (selectedCategory === "all" || label === selectedCategory) {
+                product.style.display = "";
+            } else {
+                product.style.display = "none";
+            }
+        });
+    }
+});
+</script>
+
+
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -259,6 +294,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

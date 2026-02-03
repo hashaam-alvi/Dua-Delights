@@ -179,34 +179,33 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/children.jpeg">
+                            <div class="product__label">
+                                <span>Custom Cake</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a href="#">Masha Theme Cake</a></h6>
+                        </div>
+                    </div>
+                </div>
+            
+
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="product__item">
-                    <div class="product__item__pic set-bg" data-setbg="img/children.jpeg">
+                    <div class="product__item__pic set-bg" data-setbg="img/Cupcakes.jpeg">
                         <div class="product__label">
-                            <span>Custom Cake</span>
+                            <span>Cupcake</span>
                         </div>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="#">Masha Theme Cake</a></h6>
+                        <h6><a href="#">Custom Cupcakes</a></h6>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6">
-            <div class="product__item">
-                <div class="product__item__pic set-bg" data-setbg="img/Cupcakes.jpeg">
-                    <div class="product__label">
-                        <span>Cupcake</span>
-                    </div>
-                </div>
-                <div class="product__item__text">
-                    <h6><a href="#">Custom Cupcakes</a></h6>
-                </div>
-            </div>
-        </div>
-        </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="product__item">
                 <div class="product__item__pic set-bg" data-setbg="img/birthday2.jpeg">
@@ -230,9 +229,8 @@
                     <h6><a href="#">Anniversary Special</a></h6>
                 </div>
             </div>
-
         </div>
-
+        </div>
         </div>
     </section>
     <!-- Shop Section End -->
@@ -250,38 +248,38 @@
     </div>
     <!-- Search End -->
 
-   <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const select = document.getElementById("categoryFilter");
-    const products = document.querySelectorAll(".product__item");
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const select = document.getElementById("categoryFilter");
+            const products = document.querySelectorAll(".product__item");
 
-    // normal change (works if nice-select is removed)
-    select.addEventListener("change", filterProducts);
+            // normal change (works if nice-select is removed)
+            select.addEventListener("change", filterProducts);
 
-    // NICE SELECT FIX
-    document.addEventListener("click", function (e) {
-        if (e.target.closest(".nice-select")) {
-            setTimeout(() => filterProducts.call(select), 50);
-        }
-    });
+            // NICE SELECT FIX
+            document.addEventListener("click", function (e) {
+                if (e.target.closest(".nice-select")) {
+                    setTimeout(() => filterProducts.call(select), 50);
+                }
+            });
 
-    function filterProducts() {
-        const selectedCategory = select.value;
+            function filterProducts() {
+                const selectedCategory = select.value;
 
-        products.forEach(product => {
-            const label = product
-                .querySelector(".product__label span")
-                ?.innerText.trim();
+                products.forEach(product => {
+                    const label = product
+                        .querySelector(".product__label span")
+                        ?.innerText.trim();
 
-            if (selectedCategory === "all" || label === selectedCategory) {
-                product.style.display = "";
-            } else {
-                product.style.display = "none";
+                    if (selectedCategory === "all" || label === selectedCategory) {
+                        product.style.display = "";
+                    } else {
+                        product.style.display = "none";
+                    }
+                });
             }
         });
-    }
-});
-</script>
+    </script>
 
 
     <!-- Js Plugins -->

@@ -35,7 +35,27 @@ body {
   background-color: #ffe3f1;
 }
 
+.no-interaction-img {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 
+    -webkit-user-drag: none;
+    user-drag: none;
+
+    pointer-events: none;   /* image itself ignores interaction */
+}
+
+.order-link {
+    display: inline-block;
+    cursor: pointer;        /* shows clickable cursor */
+}
+
+.order-link:focus,
+.order-link:active {
+    outline: none;
+}
 
 h1,
 h2,
@@ -53,7 +73,9 @@ h6 {
   /* height: fit-content; */
 }
 
-
+.customOrder{
+  pad: 50px;
+}
 
 h1 {
   font-size: 70px;
@@ -1565,6 +1587,18 @@ ol {
   height: 46px;
   position: relative;
 }
+.shop__option__search2 form button{
+  border: 1px solid #e1e1e1;
+  height: 46px;
+  position: relative;
+  border-radius: 25px;
+}
+
+.shop__option__search2 form button:hover{
+  background-color: #8f405b;
+  color: white
+}
+
 
 .shop__option__search form .nice-select {
   float: left;

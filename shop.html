@@ -79,6 +79,7 @@
                             <li class="active"><a href="./index.html">Home</a></li>
                             <li><a href="./shop.html">Shop</a></li>
                             <li><a href="./contact.html">Contact</a></li>
+                            <li><a href="./Order.html">How To Order</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -104,6 +105,15 @@
                                     <option value="Trifale">Trifale</option>
                                 </select>
 
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7">
+                        <div class="shop__option__search2"
+                            style="background-color: white; margin-top: 1rem; border-radius: 25px; ">
+                            <form action="#">
+                                <button id="customOrderBtn" type="button" style="width: 100%;">Place a Custom
+                                    Order</button>
                             </form>
                         </div>
                     </div>
@@ -331,7 +341,6 @@
                     const message = `
 Your name: ${customerName}
 Order name: ${cakeName}
-Order Image: ${fullImageUrl}
 Date & Time: ${dateTime}
 Pickup or Delivery: ${deliveryType}
             `.trim();
@@ -346,6 +355,33 @@ Pickup or Delivery: ${deliveryType}
                     // open WhatsApp
                     window.open(whatsappURL, "_blank");
                 });
+            });
+
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const customOrderBtn = document.getElementById("customOrderBtn");
+            if (!customOrderBtn) return;
+
+            customOrderBtn.addEventListener("click", () => {
+
+                const message = `
+ *Custom Cake Order*
+ *Please Enter Following Details*
+
+ Name:
+ Cake Type / Design:
+ Required Date & Time:
+Pickup or Delivery:
+Address (if delivery):
+        `.trim();
+
+                const whatsappURL =
+                    `https://wa.me/923314397523?text=${encodeURIComponent(message)}`;
+
+                window.open(whatsappURL, "_blank");
             });
 
         });

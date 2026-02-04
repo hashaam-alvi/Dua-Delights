@@ -298,6 +298,58 @@
         });
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const products = document.querySelectorAll(".product__item");
+
+            products.forEach(product => {
+                const pic = product.querySelector(".product__item__pic");
+                const title = product.querySelector(".product__item__text h6 a");
+
+                if (!pic || !title) return;
+
+                pic.style.cursor = "pointer";
+
+                pic.addEventListener("click", () => {
+                    const cakeName = title.innerText.trim();
+
+                    // image url from data-setbg
+                    const imageUrl = pic.getAttribute("data-setbg");
+                    const fullImageUrl = window.location.origin + "/" + imageUrl;
+
+                    // collect order details
+                    const customerName = prompt("Your name:");
+                    if (!customerName) return;
+
+                    const dateTime = prompt("Date & time when cake is required:");
+                    if (!dateTime) return;
+
+                    const deliveryType = prompt("Pickup or Delivery?");
+                    if (!deliveryType) return;
+
+                    const message = `
+Your name: ${customerName}
+Order name: ${cakeName}
+Order Image: ${fullImageUrl}
+Date & Time: ${dateTime}
+Pickup or Delivery: ${deliveryType}
+            `.trim();
+
+                    const encodedMessage = encodeURIComponent(message);
+
+                    // === CHANGE NUMBER & INSTAGRAM USERNAME HERE ===
+                    const whatsappNumber = "923XXXXXXXXX"; // Pakistan format without +
+                    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+                    // open WhatsApp
+                    window.open(whatsappURL, "_blank");
+                });
+            });
+
+        });
+    </script>
+
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
